@@ -18,9 +18,9 @@
       --border-color-light: #3ca0a0;
       --glow-color-dark: rgba(77, 217, 217, 0.8);
       --glow-color-light: rgba(38, 123, 123, 0.8);
-  --accent-cyan: #4dd9d9;
-  --accent-gold: #bfa14a;
-  --accent-orange: #f39c12;
+      --accent-cyan: #4dd9d9;
+      --accent-gold: #bfa14a;
+      --accent-orange: #f39c12;
     }
 
     html,
@@ -51,7 +51,8 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(10, 10, 20, 0.57); /* Nearly black, very high opacity */
+      background: rgba(10, 10, 20, 0.57);
+      /* Nearly black, very high opacity */
       z-index: 0;
       transition: background 0.4s ease;
     }
@@ -62,10 +63,10 @@
     }
 
     [data-theme="light"] body::before {
-      background: linear-gradient(135deg, 
-        rgba(232, 244, 248, 0.85) 0%,
-        rgba(168, 230, 207, 0.75) 50%,
-        rgba(77, 217, 217, 0.65) 100%);
+      background: linear-gradient(135deg,
+          rgba(232, 244, 248, 0.85) 0%,
+          rgba(168, 230, 207, 0.75) 50%,
+          rgba(77, 217, 217, 0.65) 100%);
     }
 
     /* Alternative approach with individual border segments */
@@ -93,14 +94,14 @@
       left: 0;
       right: 0;
       height: 2px;
-    background: linear-gradient(90deg,
-      transparent 0%,
-      transparent 30%,
-      #4dd9d9 40%,
+      background: linear-gradient(90deg,
+          transparent 0%,
+          transparent 30%,
+          #4dd9d9 40%,
           #bfa14a 50%,
-      #4dd9d9 60%,
-      transparent 70%,
-      transparent 100%);
+          #4dd9d9 60%,
+          transparent 70%,
+          transparent 100%);
       background-size: 300% 100%;
       animation: move-horizontal 12s linear infinite;
     }
@@ -110,14 +111,14 @@
       right: 0;
       bottom: 0;
       width: 2px;
-    background: linear-gradient(180deg,
-      transparent 0%,
-      transparent 30%,
-      #4dd9d9 40%,
+      background: linear-gradient(180deg,
+          transparent 0%,
+          transparent 30%,
+          #4dd9d9 40%,
           #bfa14a 50%,
-      #4dd9d9 60%,
-      transparent 70%,
-      transparent 100%);
+          #4dd9d9 60%,
+          transparent 70%,
+          transparent 100%);
       background-size: 100% 300%;
       animation: move-vertical 12s linear infinite;
     }
@@ -127,14 +128,14 @@
       left: 0;
       right: 0;
       height: 2px;
-    background: linear-gradient(-90deg,
-      transparent 0%,
-      transparent 30%,
-      #4dd9d9 40%,
+      background: linear-gradient(-90deg,
+          transparent 0%,
+          transparent 30%,
+          #4dd9d9 40%,
           #bfa14a 50%,
-      #4dd9d9 60%,
-      transparent 70%,
-      transparent 100%);
+          #4dd9d9 60%,
+          transparent 70%,
+          transparent 100%);
       background-size: 300% 100%;
       animation: move-horizontal-reverse 12s linear infinite;
     }
@@ -144,61 +145,61 @@
       left: 0;
       bottom: 0;
       width: 2px;
-    background: linear-gradient(-180deg,
-      transparent 0%,
-      transparent 30%,
-      #4dd9d9 40%,
+      background: linear-gradient(-180deg,
+          transparent 0%,
+          transparent 30%,
+          #4dd9d9 40%,
           #bfa14a 50%,
-      #4dd9d9 60%,
-      transparent 70%,
-      transparent 100%);
+          #4dd9d9 60%,
+          transparent 70%,
+          transparent 100%);
       background-size: 100% 300%;
       animation: move-vertical-reverse 12s linear infinite;
     }
 
     /* Light theme borders */
     [data-theme="light"] .border-top {
-    background: linear-gradient(90deg,
-      transparent 0%,
-      transparent 30%,
-      #3ca0a0 40%,
+      background: linear-gradient(90deg,
+          transparent 0%,
+          transparent 30%,
+          #3ca0a0 40%,
           #bfa14a 50%,
-      #3ca0a0 60%,
-      transparent 70%,
-      transparent 100%) !important;
+          #3ca0a0 60%,
+          transparent 70%,
+          transparent 100%) !important;
     }
 
     [data-theme="light"] .border-right {
-    background: linear-gradient(180deg,
-      transparent 0%,
-      transparent 30%,
-      #3ca0a0 40%,
+      background: linear-gradient(180deg,
+          transparent 0%,
+          transparent 30%,
+          #3ca0a0 40%,
           #bfa14a 50%,
-      #3ca0a0 60%,
-      transparent 70%,
-      transparent 100%) !important;
+          #3ca0a0 60%,
+          transparent 70%,
+          transparent 100%) !important;
     }
 
     [data-theme="light"] .border-bottom {
-    background: linear-gradient(-90deg,
-      transparent 0%,
-      transparent 30%,
-      #3ca0a0 40%,
+      background: linear-gradient(-90deg,
+          transparent 0%,
+          transparent 30%,
+          #3ca0a0 40%,
           #bfa14a 50%,
-      #3ca0a0 60%,
-      transparent 70%,
-      transparent 100%) !important;
+          #3ca0a0 60%,
+          transparent 70%,
+          transparent 100%) !important;
     }
 
     [data-theme="light"] .border-left {
-    background: linear-gradient(-180deg,
-      transparent 0%,
-      transparent 30%,
-      #3ca0a0 40%,
+      background: linear-gradient(-180deg,
+          transparent 0%,
+          transparent 30%,
+          #3ca0a0 40%,
           #bfa14a 50%,
-      #3ca0a0 60%,
-      transparent 70%,
-      transparent 100%) !important;
+          #3ca0a0 60%,
+          transparent 70%,
+          transparent 100%) !important;
     }
 
     /* First line - no delays, continuous movement */
@@ -305,12 +306,12 @@
 
     /* Wave effect setup */
     .wave-text {
-    background: linear-gradient(90deg,
-      #4dd9d9 0%,
-      #a8e6cf 35%,
+      background: linear-gradient(90deg,
+          #4dd9d9 0%,
+          #a8e6cf 35%,
           #bfa14a 50%,
-      #a8e6cf 65%,
-      #4dd9d9 100%);
+          #a8e6cf 65%,
+          #4dd9d9 100%);
       background-size: 300% 100%;
       -webkit-background-clip: text;
       background-clip: text;
@@ -318,27 +319,27 @@
       animation: wave-effect 6s linear infinite;
       text-shadow:
         0 0 20px rgba(77, 217, 217, 0.6),
-  0 0 40px rgba(191, 161, 74, 0.4),
+        0 0 40px rgba(191, 161, 74, 0.4),
         0 0 60px rgba(168, 230, 207, 0.2);
-  filter: drop-shadow(0 0 10px rgba(191, 161, 74, 0.5));
+      filter: drop-shadow(0 0 10px rgba(191, 161, 74, 0.5));
     }
 
     [data-theme="light"] .wave-text {
-    background: linear-gradient(90deg,
-      #3ca0a0 0%,
-      #2d5a6b 35%,
+      background: linear-gradient(90deg,
+          #3ca0a0 0%,
+          #2d5a6b 35%,
           #bfa14a 50%,
-      #2d5a6b 65%,
-      #3ca0a0 100%);
+          #2d5a6b 65%,
+          #3ca0a0 100%);
       background-size: 300% 100%;
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
       text-shadow:
         0 0 20px rgba(60, 160, 160, 0.6),
-  0 0 40px rgba(191, 161, 74, 0.4),
+        0 0 40px rgba(191, 161, 74, 0.4),
         0 0 60px rgba(45, 90, 107, 0.2);
-  filter: drop-shadow(0 0 10px rgba(191, 161, 74, 0.5));
+      filter: drop-shadow(0 0 10px rgba(191, 161, 74, 0.5));
     }
 
     @keyframes wave-effect {
@@ -445,7 +446,7 @@
     }
 
     footer a:hover {
-  color: #bfa14a;
+      color: #bfa14a;
     }
 
     [data-theme="light"] footer {
@@ -457,7 +458,7 @@
     }
 
     [data-theme="light"] footer a:hover {
-  color: #bfa14a;
+      color: #bfa14a;
     }
 
     /* Toggle Button */
@@ -569,11 +570,10 @@
     </div>
 
     <div class="icons">
-      <a href="https://discord.gg/JBXtzpRUcF" title="Discord" target="_blank"><i
-          class="fab fa-discord"></i></a>
-      <a href="https://x.com/Lavender" title="X" target="_blank"><i class="fab fa-x-twitter"></i></a>
-      <a href="https://www.youtube.com/channel/UCENdrTBnznipUlIYcRQenOA" title="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
-      <a href="https://www.twitch.tv/Lavender" title="Twitch" target="_blank"><i class="fab fa-twitch"></i></a>
+      <a href="https://discord.gg/Vj8dBkAhHq" title="Discord" target="_blank"><i class="fab fa-discord"></i></a>
+      <a href="https://x.com/emptyamethyst" title="X" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://youtube.com/@emptyamethyst" title="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://twitch.tv/doll_lavender/" title="Twitch" target="_blank"><i class="fab fa-twitch"></i></a>
     </div>
   </div>
 
